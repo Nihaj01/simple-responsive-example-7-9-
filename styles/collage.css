@@ -20,3 +20,22 @@ height: calc((100%-5px))/2;
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
 }
+/* Responsive media Query */
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .vsec{
+        grid-template-columns: 1fr;
+
+    }
+    
+}
+/* Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px){
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+}
